@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+main {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.zoneFormulaire {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form {
+    background: bisque;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 7px;
+}
+
+#required,
+.spanErro {
+    color: #ff0000;
+}
+
+.spanErro,
+label {
+	
+    font-size: 0.758rem;
+	width: 325px;
+
+}
+
+.spanErro {
+    position: relative;
+    height: 0.8rem;
+  
+    top: -5px;
+}
+
+label {
+    color: gray;
+}
+
+input {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border: 2px solid #4caf50;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 50%;
+    margin: auto;
+    cursor: pointer;
+    background: #4caf50;
+    font-weight: 900;
+    color: #ffffff;
+    border: none !important;
+}
+
+input[type="submit"]:active {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+.errorChamp {
+    border-color: #ff0000 !important;
+}
+
+.validChamp {
+    border-color: #4caf50 !important;
+}
