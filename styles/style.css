@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-body,
+footer {
+    font-family: sans-serif;
+    text-align: center;
+}
 main {
     font-family: sans-serif;
     height: 100vh;
@@ -36,16 +39,14 @@ form {
 
 .spanErro,
 label {
-	
     font-size: 0.758rem;
-	width: 325px;
-
+    width: 325px;
 }
 
 .spanErro {
     position: relative;
     height: 0.8rem;
-  
+
     top: -5px;
 }
 
@@ -88,3 +89,5 @@ input[type="submit"]:active {
 .validChamp {
     border-color: #4caf50 !important;
 }
+
+
