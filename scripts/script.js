@@ -101,5 +101,5 @@ inputNom.addEventListener("input", (event) => {
 
 inputEmail.addEventListener("input", (event) => {
     inputEmail.classList.remove("errorChamp", "validChamp");
-    spanError.innerHTML = "";
+    spanErrorEmail.innerHTML = "";
 });
