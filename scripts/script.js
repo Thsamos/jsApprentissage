@@ -25,19 +25,22 @@ form.addEventListener("submit", (event) => {
         afficherMessageErrorEmail(error.message);
     }
 
-// Si tout est valide, soumettre le formulaire
+    // Si tout est valide, soumettre le formulaire
 
     if (isNomValid && isEmailValid) {
-        alert(
+        /*  alert(
             "Formulaire validé avec succès!\nNom: " +
                 document.getElementById("nom").value +
                 "\nEmail: " +
                 document.getElementById("email").value
-        );
+        );*/
         inputNom.value = "";
         inputNom.style.border = "none";
         inputEmail.value = "";
         inputEmail.style.border = "none";
+       /* setTimeout(() => {
+            window.location.href = "dashbord.html";
+        }, 5000);*/
     }
 });
 
