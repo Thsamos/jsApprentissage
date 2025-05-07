@@ -5,6 +5,7 @@ const spanError = document.getElementById("spanError");
 const spanErrorEmail = document.getElementById("spanErrorEmail");
 const inputSubmit = document.getElementById("btnSubmit");
 const error = document.querySelectorAll("input");
+const idAffichageNom = document.getElementById("idAffichageNom");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -38,12 +39,15 @@ form.addEventListener("submit", (event) => {
         inputNom.style.border = "none";
         inputEmail.value = "";
         inputEmail.style.border = "none";
- 
-        window.location.href = "dashbord.html";
-       
+        document.querySelector(".loader").classList.add("visible");
+        setTimeout(() => {
+            document.querySelector(".loader").classList.add("hidden");
+            window.location.href = "dashbord.html";
+           
+        }, 2000);
     }
 });
-
+ //idAffichageNom.innerHTML = "gggggggggg";
 function validerNom(nom) {
     if (!nom.trim()) {
         throw new Error("Le nom est obligation");
