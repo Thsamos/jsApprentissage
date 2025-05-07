@@ -38,9 +38,9 @@ form.addEventListener("submit", (event) => {
         inputNom.style.border = "none";
         inputEmail.value = "";
         inputEmail.style.border = "none";
-       /* setTimeout(() => {
-            window.location.href = "dashbord.html";
-        }, 5000);*/
+ 
+        window.location.href = "dashbord.html";
+       
     }
 });
 
